@@ -5,6 +5,9 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [count1, setCount1] = useState(1)
+  const [count2, setCount2] = useState(1)
+  const [count3, setCount3] = useState(1)
 
   return (
     <>
@@ -23,6 +26,24 @@ function App() {
         </button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+        <button onClick={() => setCount1((count1) => (count1==5 ? 1 : count1+1))}>
+          count1 is {count1}
+        </button>
+        <p>
+          message1 : count1 is {count1}
+        </p>
+        <button onClick={() => setCount2((count2) => (count2==5 ? 1 : count2+1))}>
+          count2 is {count2}
+        </button>
+        <p>
+          message2 : count2 is {count2}
+        </p>
+        <button onClick={() => setCount3((count3) => (count3==5 ? 1 : count3+1))}>
+          count3 is {count3}
+        </button>
+        <p>
+          message1 : count3 is {count3}
         </p>
       </div>
       <p className="read-the-docs">
